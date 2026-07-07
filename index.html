@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据分析报告中心</title>
+<style>
+:root { --bg: #FAFBFC; --bg2: #F0F2F5; --ink: #1a1d23; --muted: #5f6878; --rule: #d1d5db; --accent: #0d6efd; --accent2: #dc3545; --accent3: #198754; --font: system-ui, -apple-system, sans-serif; --max: 900px; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 15px; }
+body { font-family: var(--font); color: var(--ink); background: var(--bg); line-height: 1.7; padding: 2rem 1rem; }
+article { max-width: var(--max); margin: 0 auto; }
+header { text-align: center; padding: 2rem 0; border-bottom: 2px solid var(--accent); margin-bottom: 2rem; }
+header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
+header .subtitle { color: var(--muted); font-size: 1rem; }
+header .meta { color: var(--muted); font-size: 0.85rem; margin-top: 0.75rem; }
+h2 { font-size: 1.25rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule); }
+.report-card { background: white; border: 1px solid var(--rule); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; transition: box-shadow 0.2s; }
+.report-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.report-card .left { flex: 1; }
+.report-card .title { font-size: 1.05rem; font-weight: 600; color: var(--ink); margin-bottom: 0.25rem; }
+.report-card .desc { font-size: 0.85rem; color: var(--muted); }
+.report-card .date { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+.report-card .btn { display: inline-block; padding: 0.5rem 1.25rem; background: var(--accent); color: white; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 500; white-space: nowrap; }
+.report-card .btn:hover { background: #0b5ed7; }
+.category-tag { display: inline-block; padding: 0.15rem 0.5rem; background: var(--bg2); border-radius: 4px; font-size: 0.75rem; color: var(--muted); margin-right: 0.5rem; }
+.update-info { background: var(--bg2); border: 1px solid var(--rule); border-radius: 6px; padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.85rem; color: var(--muted); }
+@media (max-width: 600px) { .report-card { flex-direction: column; align-items: flex-start; gap: 0.75rem; } }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+<h1>数据分析报告中心</h1>
+<p class="subtitle">电商运营数据可视化报告汇总</p>
+<p class="meta">基于达摩盘、生意参谋等数据源 &nbsp;|&nbsp; 自动更新</p>
+</header>
+
+<div class="update-info">
+<strong>使用说明：</strong>点击右侧"查看报告"按钮打开交互式图表。报告在电脑和手机上均可查看。
+</div>
+
+<h2>市场趋势报告</h2>
+
+<div class="report-card">
+<div class="left">
+<span class="category-tag">竞品分析</span>
+<div class="title">解酒产品市场趋势分析</div>
+<div class="desc">7个关键词搜索/互动人群趋势、市场份额变化、消费层级结构</div>
+<div class="date">2026-07-07 更新 &nbsp;|&nbsp; 数据来源：达摩盘</div>
+</div>
+<a class="btn" href="./jiejiu-report/index.html">查看报告</a>
+</div>
+
+<!-- 模板：添加新报告时复制下面这段，修改内容即可 -->
+<!--
+<div class="report-card">
+<div class="left">
+<span class="category-tag">销售分析</span>
+<div class="title">销售数据周报</div>
+<div class="desc">销售额、转化率、客单价趋势分析</div>
+<div class="date">2026-07-07 更新 &nbsp;|&nbsp; 数据来源：生意参谋</div>
+</div>
+<a class="btn" href="./sales-report/index.html">查看报告</a>
+</div>
+-->
+
+<h2>数据看板</h2>
+
+<div class="report-card">
+<div class="left">
+<span class="category-tag">实时看板</span>
+<div class="title">解酒产品实时监测</div>
+<div class="desc">关键词搜索人数、互动人数、价格带分布实时数据</div>
+<div class="date">2026-07-07 更新</div>
+</div>
+<a class="btn" href="./jiejiu-report/index.html">查看看板</a>
+</div>
+
+<hr style="margin-top:3rem;border:none;border-top:1px solid var(--rule);">
+<p style="text-align:center;color:var(--muted);font-size:0.8rem;margin-top:2rem;">
+报告由自动化脚本生成 &nbsp;|&nbsp; 托管于 GitHub Pages
+</p>
+
+</article>
+</body>
+</html>
